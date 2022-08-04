@@ -4,6 +4,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 #root {
@@ -11,8 +12,76 @@
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 15px;
-  font-family: 'Albert Sans', sans-serif;
+  padding: 0 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
+input, button {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+.flex-beetwen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column--center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt-main {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.txt {
+  &--dark {
+    color: $blue-dark2;
+  }
+
+  &--white {
+    color: $white;
+  }
+}
+
+.title {
+  &-h1 {
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 65px;
+  }
+
+  &-h2 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+  }
+
+  &-h5 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.hoverable {
+  display: none;
 }

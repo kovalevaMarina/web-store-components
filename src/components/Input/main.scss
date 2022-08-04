@@ -1,0 +1,31 @@
+.input {
+  width: 510px;
+  padding: 15px 15px 15px 50px;
+  background-color: $gray-light;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $blue-dark2;
+  &:focus {
+    outline: none;
+    border: 2px solid $blue-dark2;
+  }
+  &__img {
+    background-repeat: no-repeat;
+    background-position: 5%;
+  }
+
+  &-search {
+    background-image: url("../assets/icons/search.svg");
+  }
+
+  &-name {
+    background-image: url("../assets/icons/user.svg");
+  }
+  
+  &-phone {
+    background-image: url("../assets/icons/phone-input.svg");
+  }
+}

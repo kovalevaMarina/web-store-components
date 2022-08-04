@@ -1,0 +1,22 @@
+.promo {
+  padding: 116px 0;
+  background-image: url("../assets/img/promo_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &-wrap{
+    max-width: 611px;
+  }
+
+  &-title {
+    margin-bottom: 21px;
+  }
+
+  &-txt {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 34px;
+    margin-bottom: 35px;
+    padding-right: 67px;
+  }
+}

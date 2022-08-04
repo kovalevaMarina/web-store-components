@@ -1,0 +1,57 @@
+.header {
+  padding: 21px 0;
+
+  &-top {
+    margin-bottom: 21px;
+  }
+}
+
+.phone-number {
+  position: relative;
+  padding-left: 34px;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 27px;
+  color: $blue-dark2;
+  transition: 0.3s ease;
+  &::before{
+    content: "";
+    position: absolute;
+    background-image: url("../assets/icons/phone.svg");
+    width: 34px;
+    height: 34px;
+    left: 0;
+    top: -5px;
+  }
+}
+
+.select-group {
+  padding-left: 28px;
+  margin-right: 25px;
+  background-image: url("../assets/icons/location.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: transparent;
+  border: none;
+   option {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: $blue-dark2;
+  }
+}
+
+.basket-link {
+  position: relative;
+  padding-left: 28px;
+  transition: 0.3s ease;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/icons/basket.svg");
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+  }
+}

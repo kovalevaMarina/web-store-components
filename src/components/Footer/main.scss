@@ -1,0 +1,52 @@
+.footer {
+  padding: 65px 0;
+  background-color: $black;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-txt {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray-light6;
+    margin: 9px 0;
+  }
+}
+
+.contact-list {
+  &__item {
+    margin-bottom: 17px;
+    &-link {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 24px;
+      color: $white;
+    }
+    &-info {
+      position: relative;
+      padding-left: 40px;
+      &::before {
+        content: "";
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-repeat: no-repeat;
+      }
+
+      &--phone::before {
+        background-image: url("../assets/icons/phone.svg");
+        transform: rotate(-45deg);
+      }
+      &--email::before {
+        background-image: url("../assets/icons/message.svg");
+      }
+      &--address::before {
+        background-image: url("../assets/icons/address.svg");
+      }
+    }
+  }
+}

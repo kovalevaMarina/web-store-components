@@ -1,8 +1,8 @@
-const createElement = (tag, nameClass, parent, txt = undefined) => {
+const createElement = (tag, nameClass, txt = undefined, parent) => {
   const elem = document.createElement(tag);
   elem.className = nameClass;
   if (txt) elem.innerHTML = txt;
-  parent.append(elem);
+  if (parent) parent.append(elem);
   return elem;
 };
 
