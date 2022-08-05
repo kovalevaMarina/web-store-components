@@ -1,6 +1,7 @@
 import Button from "../Button";
 import Input from "../Input";
 import Menu from "../Menu";
+import Link from "../Link";
 import logo from "../../assets/img/logo.png";
 
 const Header = () => {
@@ -15,12 +16,12 @@ const Header = () => {
           </div>
           ${Input("input-search", "text", "Название модели или артикул")}
           <div class="phone">
-            <a class="phone-number" href="tel:"+380932210675>+38 093 221-06-75</a>
+            ${Link("phone-number", "tel:+380932210675", "+38 093 221-06-75")}
           </div>
           ${Button("Заказать звонок", "btn-light")}
         </div>
         <div class="header-bottom flex-beetwen">
-          ${Button("Каталог", "btn-gray")}
+        ${Link("link link-catalog", "/catalog", "Catalog")}
           ${Menu(
             "menu-list",
             "menu-list__item",
@@ -33,7 +34,7 @@ const Header = () => {
               <option value="dnipro">Днепр</option>
             </select>
             <div class="basket-wrap">
-              <a class="basket-link txt-main txt--dark" href="#">Моя корзина</a>
+              ${Link("basket-link txt-main txt--dark", "#", "Моя корзина")}
             </div>
           </div>
         </div>

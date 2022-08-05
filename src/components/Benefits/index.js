@@ -1,6 +1,7 @@
 import benefit_1 from "../../assets/icons/benefit_1.svg";
 import benefit_2 from "../../assets/icons/benefit_2.svg";
 import benefit_3 from "../../assets/icons/benefit_3.svg";
+import Link from "../Link";
 
 const Benefits = () => {
   const benefitsItem = [
@@ -30,8 +31,10 @@ const Benefits = () => {
                 (benefit) => `
                 <div class="benefits-list__item">
                   <img class="benefits-list__item--img" src=${benefit.img}> 
-                  <p class="benefits-list__item--txt txt--dark">${benefit.text}</p> 
-                  <a class="benefits-list__item--link" href="#">${benefit.link}</a>
+                  <p class="benefits-list__item--txt txt--dark">${
+                    benefit.text
+                  }</p>
+                  ${Link("benefits-list__item--link", "#", `${benefit.link}`)}
                 </div>`
               )
               .join("")}

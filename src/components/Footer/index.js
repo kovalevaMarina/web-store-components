@@ -1,4 +1,5 @@
 import Menu from "../Menu";
+import Link from "../Link";
 import store from "../../../store.json";
 import logo from "../../assets/img/logo.png";
 
@@ -23,15 +24,27 @@ const Footer = () => {
           </div>
           <div class="footer-right">
               <ul class="contact-list">
-                <li class="contact-list__item"><a class="contact-list__item-link contact-list__item-info contact-list__item-info--phone" src="tel:+380932210675">${
-                  store.phone
-                }</a></li>
-                <li class="contact-list__item"><a class="contact-list__item-link contact-list__item-info contact-list__item-info--email" src="https://goo.gl/maps/LmgcjBbRqc1kE4Yw5" target="_blank">${
-                  store.email
-                }</a></li>
-                <li class="contact-list__item"><a class="contact-list__item-link contact-list__item-info contact-list__item-info--address" href="mailto:zakaz@kresla-samurai.com">${
-                  store.address
-                }</a></li>
+                <li class="contact-list__item">
+                  ${Link(
+                    "contact-list__item-link contact-list__item-info contact-list__item-info--phone",
+                    "tel:+380932210675",
+                    `${store.phone}`
+                  )}
+                </li>
+                <li class="contact-list__item">
+                  ${Link(
+                    "contact-list__item-link contact-list__item-info contact-list__item-info--email",
+                    "https://goo.gl/maps/LmgcjBbRqc1kE4Yw5",
+                    `${store.email}`
+                  )}
+                </li>
+                <li class="contact-list__item">
+                  ${Link(
+                    "contact-list__item-link contact-list__item-info contact-list__item-info--address",
+                    "mailto:zakaz@kresla-samurai.com",
+                    `${store.address}`
+                  )}
+                </li>
               </ul>
           </div>
         </div>

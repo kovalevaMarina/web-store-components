@@ -1,0 +1,16 @@
+.link {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 10px 30px;
+  transition: 0.3s ease;
+  &:hover {
+    background-color: $blue2;
+  }
+  &-catalog {
+    background-color: $gray-dark;
+    color: $white;
+    border-radius: 0px 12px 12px 12px;
+  }
+
+}

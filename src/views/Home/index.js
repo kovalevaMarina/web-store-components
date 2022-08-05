@@ -11,7 +11,7 @@ const root = document.getElementById("root");
 const Home = () => {
   root.innerHTML = `
     ${Header()}
-    <main>
+    <main id="main">
       ${Promo()}
       ${Benefits()}
       ${Catalog()}
