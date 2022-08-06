@@ -1,8 +1,17 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Switch from "../../components/Switch";
+import Catalog from "../../components/Catalog";
+import Question from "../../components/Question";
+import Map from "../../components/Map";
 
 const CatalogPage = () => {
-  return "<h1>Ctalog</h1>";
+  return `
+    <div>
+      ${Switch()}
+      ${Catalog(true)}
+      ${Question()}
+      ${Map()}
+    </div>
+  `;
 };
 
 export default CatalogPage;

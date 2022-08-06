@@ -1,0 +1,44 @@
+.review {
+  &-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &-wrap {
+    gap: 32px;
+  }
+
+  &-item {
+    padding: 43px;
+    border: 1px solid $gray-light5;
+    box-shadow: 0px 20px 52px -8px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    &__top {
+      display: flex;
+      margin-bottom: 10px;
+      &-right {
+        margin-left: 12px;
+      }
+    }
+
+    &__txt {
+      margin-bottom: 14px;
+      &-main {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &__more {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: $blue-dark2;
+      transition: 0.3s ease;
+      &:hover {
+        color: $blue2;
+      }
+    } 
+  }
+}

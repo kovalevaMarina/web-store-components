@@ -1,7 +1,12 @@
+@import "../../components/Catalog//Select/main.scss";
+@import "../../components/Catalog//Sort/main.scss";
+
 .catalog {
   &-title {
     margin-bottom: 35px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
   }
 
   &-list{

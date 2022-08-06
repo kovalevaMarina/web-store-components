@@ -1,63 +1,65 @@
 import chair_1 from "../../assets/img/chair_1.png";
 import chair_2 from "../../assets/img/chair_2.png";
 import Button from "../Button";
+import Select from "../Catalog/Select";
+import Sort from "../Catalog/Sort";
 
-const Catalog = () => {
+const Catalog = (sortItem = false) => {
   const catalogItems = [
     {
       img: chair_1,
       text: "Samurai KL-1.04 Темно-коричневый",
-      priceNew: "23 000 грн",
-      priceOld: "27 000 грн",
+      priceNew: "5 000 грн",
+      priceOld: "3 000 грн",
       btn: Button("Добавить в корзину", "btn-blue"),
     },
     {
       img: chair_2,
       text: "Samurai KL-1.04 Темно-коричневый",
-      priceNew: "24 000 грн",
-      priceOld: "27 000 грн",
+      priceNew: "6 000 грн",
+      priceOld: "4 000 грн",
       btn: Button("Добавить в корзину", "btn-blue"),
     },
     {
       img: chair_2,
       text: "Samurai KL-1.04 Темно-коричневый",
-      priceNew: "23 000 грн",
-      priceOld: "27 000 грн",
+      priceNew: "5 000 грн",
+      priceOld: "3 000 грн",
       btn: Button("Добавить в корзину", "btn-blue"),
     },
     {
       img: chair_2,
       text: "Samurai KL-1.04 Темно-коричневый",
-      priceNew: "23 000 грн",
-      priceOld: "27 000 грн",
+      priceNew: "5 000 грн",
+      priceOld: "3 000 грн",
       btn: Button("Добавить в корзину", "btn-blue"),
     },
     {
       img: chair_2,
       text: "Samurai KL-1.04 Темно-коричневый",
-      priceNew: "23 000 грн",
-      priceOld: "27 000 грн",
+      priceNew: "5 000 грн",
+      priceOld: "3 000 грн",
       btn: Button("Добавить в корзину", "btn-blue"),
     },
     {
       img: chair_2,
       text: "Samurai KL-1.04 Темно-коричневый",
-      priceNew: "23 000 грн",
-      priceOld: "27 000 грн",
+      priceNew: "5 000 грн",
+      priceOld: "3 000 грн",
       btn: Button("Добавить в корзину", "btn-blue"),
     },
     {
       img: chair_2,
       text: "Samurai KL-1.04 Темно-коричневый",
-      priceNew: "23 000 грн",
-      priceOld: "27 000 грн",
+      priceNew: "5 000 грн",
+      priceOld: "3 000 грн",
       btn: Button("Добавить в корзину", "btn-blue"),
     },
     {
       img: chair_2,
       text: "Samurai KL-1.04 Темно-коричневый",
-      priceNew: "23 000 грн",
-      priceOld: "27 000 грн",
+      priceNew: "5 000 грн",
+      priceOld: "3 000 грн",
       btn: Button("Добавить в корзину", "btn-blue"),
     },
   ];
@@ -65,7 +67,11 @@ const Catalog = () => {
   return `
     <section class="catalog">
       <div class="container">
-        <h2 class="title-h2 catalog-title txt--dark">Каталог кресел</h2>
+        <div class="catalog-title">
+          <h2 class="title-h2 txt--dark">Каталог кресел</h2>
+          ${sortItem ? Sort() : ""}
+        </div>
+        ${Select()}
         <div class="catalog-list">
           ${catalogItems
             .map(

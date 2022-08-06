@@ -21,7 +21,7 @@ li {
   list-style-type: none;
 }
 
-input, button {
+input, button, select {
   border: none;
 }
 
@@ -46,13 +46,17 @@ a {
   align-items: center;
 }
 
-.txt-main {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 27px;
-}
-
 .txt {
+  &-main {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+
   &--dark {
     color: $blue-dark2;
   }
@@ -75,10 +79,22 @@ a {
     line-height: 53px;
   }
 
+  &-h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+  }
+
   &-h5 {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  &-h6 {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
   }
 }
 

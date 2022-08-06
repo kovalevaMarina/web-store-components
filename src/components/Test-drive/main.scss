@@ -1,0 +1,40 @@
+.test-drive {
+  background-image: url("../assets/img/test_drive_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    &-txt {
+      width: 682px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-img {
+      position: relative;
+      top: -108px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    color: $blue-dark2;
+  }
+
+  &__txt {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: $gray-dark;
+    margin-bottom: 31px;
+    padding-right: 60px;
+  }
+
+  &__btn {
+    align-self: flex-start;
+  }
+}

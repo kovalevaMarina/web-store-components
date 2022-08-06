@@ -10,7 +10,7 @@ const Header = () => {
       <div class="container">
         <div class="header-top flex-beetwen">
           <div class="logo-wrap">
-            <a class="logo" href="#">
+            <a class="logo" href="/">
               <img class="logo-img" src="${logo}" alt="logo-store">
             </a>
           </div>
@@ -21,7 +21,7 @@ const Header = () => {
           ${Button("Заказать звонок", "btn-light")}
         </div>
         <div class="header-bottom flex-beetwen">
-        ${Link("link link-catalog", "/catalog", "Catalog")}
+        ${Link("link link-catalog", "/catalog", "&#x2630; Каталог")}
           ${Menu(
             "menu-list",
             "menu-list__item",

@@ -1,6 +1,7 @@
 import ErrorPage from "../views/ErrorPage";
 import Home from "../views/Home";
 import CatalogPage from "../views/Catalog";
+import Product from "../views/Product";
 
 const onHandleRoute = (e) => {
   e = e || e.window;
@@ -13,6 +14,7 @@ const routes = {
   404: ErrorPage(),
   "/": Home(),
   "/catalog": CatalogPage(),
+  "/product": Product(),
 };
 
 const onLocation = () => {
@@ -20,7 +22,7 @@ const onLocation = () => {
   const route = routes[pathname] || routes[404];
   const main = document.getElementById("main");
   main.innerHTML = "";
-  main.append(route);
+  main.innerHTML = route;
 };
 
 window.onpopstate = onLocation;

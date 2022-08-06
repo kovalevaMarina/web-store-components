@@ -1,0 +1,16 @@
+.clients {
+  margin-bottom: 70px;
+  &-title {
+    text-align: center;
+    margin-bottom: 42px;
+  }
+
+  &-wrap {
+    &__img {
+      &-icon {
+        width: 172px;
+        height: 56px;
+      }
+    }
+  }
+}

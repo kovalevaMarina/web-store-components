@@ -1,0 +1,38 @@
+.select {
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+
+  &-fieldset{
+    display: flex;
+    align-items: center;
+    width: 281px;
+    border: 1px solid $gray-light6;
+    border-radius: 8px;
+  }
+
+  &-title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $gray-light6;
+  }
+
+  &-list{
+    justify-content: space-between;
+    display: flex;
+    width: 210px;
+    padding: 4px;
+    margin-left: 5px;
+    background-color: $white;
+  }
+
+  &-option{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue-dark2;
+  }
+}
