@@ -1,0 +1,17 @@
+@import "./Basket-item/main.scss";
+@import "./Basket-order/main.scss";
+@import "./Basket-confirm/main.scss";
+@import "./Basket-delivery/main.scss";
+
+.basket {
+  &-list {
+    margin-bottom: 50px;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 29px;
+  }
+}

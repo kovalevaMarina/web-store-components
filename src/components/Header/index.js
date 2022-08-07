@@ -14,7 +14,11 @@ const Header = () => {
               <img class="logo-img" src="${logo}" alt="logo-store">
             </a>
           </div>
-          ${Input("input-search", "text", "Название модели или артикул")}
+          ${Input(
+            "input input__img input-search",
+            "text",
+            "Название модели или артикул"
+          )}
           <div class="phone">
             ${Link("phone-number", "tel:+380932210675", "+38 093 221-06-75")}
           </div>
@@ -34,7 +38,12 @@ const Header = () => {
               <option value="dnipro">Днепр</option>
             </select>
             <div class="basket-wrap">
-              ${Link("basket-link txt-main txt--dark", "#", "Моя корзина")}
+              ${Link(
+                "basket-link txt-main txt--dark",
+                "/basket",
+                "Моя корзина"
+              )}
+              <div class="basket-count">+2</div>
             </div>
           </div>
         </div>

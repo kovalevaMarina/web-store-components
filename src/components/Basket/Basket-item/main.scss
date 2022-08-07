@@ -1,0 +1,32 @@
+.basket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  border-bottom: 1px solid $gray-light5;
+  padding: 5px;
+  &__img {
+    width: 107px;
+    height: 152px;
+  }
+
+  &__txt {
+    margin-top: 5px;
+    color: $gray-light6;
+  }
+
+  &__price {
+    &-new {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 31px;
+    }
+
+    &-old {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      text-decoration: line-through 3px $red;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.basket-confirm {
+  margin-bottom: 102px;
+  &__wrap {
+    width: 850px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__txt {
+    width: 483px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $gray-light6;
+    margin-left: 24px;
+  }
+}

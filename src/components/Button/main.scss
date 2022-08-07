@@ -29,3 +29,15 @@
     }
   }
 }
+
+.btn-product {
+  &__add,
+  &__remove {
+    width: 42px;
+    height: 42px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid $gray-light5;
+    background-color: $white;
+  }
+}

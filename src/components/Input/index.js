@@ -1,5 +1,5 @@
-const Input = (classInput, typeInput, placeholderTxt) => `
-  <input class="input input__img ${classInput}" type="${typeInput}" placeholder= "${placeholderTxt}">
+const Input = (classInput, typeInput, placeholderTxt, idInput) => `
+  <input class="${classInput}" type="${typeInput}" placeholder= "${placeholderTxt}" id="${idInput}">
 `;
 
 export default Input;

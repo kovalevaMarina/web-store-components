@@ -22,3 +22,5 @@ const linkProducts = document.querySelectorAll(".catalog-list__item--title");
 linkProducts.forEach((linkProduct) =>
   linkProduct.addEventListener("click", onHandleRoute)
 );
+
+document.querySelector(".basket-link").addEventListener("click", onHandleRoute);

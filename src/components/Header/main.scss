@@ -41,17 +41,30 @@
   }
 }
 
-.basket-link {
-  position: relative;
-  padding-left: 28px;
-  transition: 0.3s ease;
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../assets/icons/basket.svg");
-    width: 20px;
-    height: 20px;
-    left: 0;
-    top: 0;
+.basket {
+  &-wrap {
+    display: flex;
+  }
+  &-link {
+    position: relative;
+    padding-left: 28px;
+    transition: 0.3s ease;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../assets/icons/basket.svg");
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &-count {
+    margin-left: 6px;
+    background-color: $blue2;
+    color: $white;
+    border-radius: 27px;
+    padding: 5px 10px;
   }
 }

@@ -1,0 +1,61 @@
+.basket-delivery {
+  &__wrap {
+    display: flex;
+    padding: 17px 20px;
+    border: 1px solid $gray-light5;
+    border-radius: 8px;
+    margin-bottom: 9px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    &-wrap {
+      margin-left: 18px;
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: $gray-dark;
+      margin-bottom: 4px;
+    }
+
+    &-txt {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: $gray-light6;
+    }
+
+    &-address {
+      width: 528px;
+      padding: 12px 30px;
+      margin-bottom: 23px;
+      border: 1px solid $gray-light5;
+      box-shadow: 0px 6px 16px rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+    }
+  }
+
+  &__address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $gray-light6;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $blue2;
+  }
+}

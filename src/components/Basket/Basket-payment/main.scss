@@ -1,0 +1,22 @@
+.basket-payment {
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 17px;
+  }
+
+  &__label {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $gray-dark;
+  }
+
+  &__wrap {
+    padding: 22px 26px;
+    border: 1px solid #E7EAEF;
+    border-radius: 8px;
+    margin-bottom: 9px;
+  }
+}
