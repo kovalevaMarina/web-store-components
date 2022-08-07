@@ -9,7 +9,7 @@ const Footer = () => {
       <div class="container">
         <div class="footer-wrap">
           <div class="footer-left">
-            <a class="logo" href="/">
+            <a class="logo" href="./">
               <img class="logo-img" src="${logo}" alt="logo-store">
             </a>
             <p class="footer-txt footer-txt__private">Политика конфиденциальности</p>

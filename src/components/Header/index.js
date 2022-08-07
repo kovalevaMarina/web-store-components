@@ -10,7 +10,7 @@ const Header = () => {
       <div class="container">
         <div class="header-top flex-beetwen">
           <div class="logo-wrap">
-            <a class="logo" href="/">
+            <a class="logo" href="./">
               <img class="logo-img" src="${logo}" alt="logo-store">
             </a>
           </div>
