@@ -1,7 +1,7 @@
 import ErrorPage from "../views/ErrorPage";
 import Home from "../views/Home";
 import CatalogPage from "../views/Catalog";
-import Product from "../views/Product";
+import ProductPage from "../views/Product";
 
 const onHandleRoute = (e) => {
   e = e || e.window;
@@ -14,7 +14,7 @@ const routes = {
   404: ErrorPage(),
   "/": Home(),
   "/catalog": CatalogPage(),
-  "/product": Product(),
+  "/product": ProductPage(),
 };
 
 const onLocation = () => {

@@ -1,3 +1,5 @@
+@import "../Switch/Switch-line/main.scss";
+
 .switch {
   margin: 28px 0;
   &-wrap {
@@ -13,9 +15,5 @@
 
   .active {
     color: $gray-light6;
-  }
-
-  &-line {
-    margin: 0 6px;
   }
 }

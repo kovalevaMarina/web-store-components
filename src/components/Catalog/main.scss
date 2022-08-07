@@ -34,6 +34,9 @@
       &--title {
         margin-bottom: 3px;
         text-align: center;
+        &:hover {
+          color: $blue2;
+        }
       }
 
       &-price--new {

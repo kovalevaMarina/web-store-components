@@ -1,0 +1,12 @@
+.product-info {
+  &__choise {
+    display: flex;
+    &-color {
+      border: 2px solid $gray-light5;
+      border-radius: 8px;
+      width: 76px;
+      height: 76px;
+      margin-right: 8px;
+    }
+  }
+}
